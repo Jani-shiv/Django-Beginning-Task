@@ -1,3 +1,24 @@
-# Example requirements.txt
-requests
-flask
+# Main Framework
+Django>=4.2,<5.0
+
+# Environment Variables (optional, good for production)
+python-decouple>=3.8
+
+# Database Drivers (optional, if needed)
+psycopg2>=2.9.5   # (Only if you plan to use PostgreSQL)
+
+# Gunicorn for Production Server (optional, good for deployment)
+gunicorn>=21.2.0
+
+# For Static Files handling (only if needed during deployment)
+whitenoise>=6.6.0
+
+# Additional (for security & best practices)
+django-environ>=0.10.0
+
+# How to Use?
+pip install -r requirements.txt
+
+#
+
+

@@ -63,18 +63,6 @@ pip install django
 
 
 ```
----
-<h2 align="center">⭐ Support the Project</h2>
-
-<p align="center">
-  <a href="https://github.com/Jani-shiv/Django-Beginning-Task">
-    <img src="https://img.shields.io/github/stars/Jani-shiv/Django-Beginning-Task?style=for-the-badge&logo=github&color=ffd700&label=Stars&labelColor=black">
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://starchart.cc/Jani-shiv/Django-Beginning-Task.svg" alt="Star Chart" width="600">
-</p>
 
 ---
 

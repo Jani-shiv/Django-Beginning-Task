@@ -1,0 +1,152 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+    
+}
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration:wavy;
+}
+.nav-link {
+    color: #0e0101 !important;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration:wavy;
+}
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Container */
+.container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+.btn-custom:hover {
+    background-color: #2575fc;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.2);
+}
+.btn-custom:active {
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Scroll Navbar Effect */
+.navbar.scrolled {
+    background: #2c3e50 !important;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 768px) {
+    /* Navbar - mobile friendly */
+    .navbar {
+        padding: 10px 15px;
+    }
+    .navbar-brand {
+        font-size: 24px;
+    }
+    .navbar-nav {
+        text-align: center;
+        background: rgba(44, 62, 80, 0.95);
+        padding: 15px 0;
+    }
+    .nav-link {
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 8px 0;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    .btn-custom {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar - very small screens */
+    .navbar {
+        padding: 10px 12px;
+    }
+    .navbar-brand {
+        font-size: 22px;
+    }
+    .nav-link {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

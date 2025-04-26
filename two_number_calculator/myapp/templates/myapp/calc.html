@@ -1,0 +1,30 @@
+{% extends 'myapp/base.html' %}
+{% block title %}Add Two Numbers{% endblock %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="mb-4">Enter Two Numbers</h2>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        <div class="mb-3">
+          {{ form.num1.label_tag }}
+          {{ form.num1 }}
+          {{ form.num1.errors }}
+        </div>
+        <div class="mb-3">
+          {{ form.num2.label_tag }}
+          {{ form.num2 }}
+          {{ form.num2.errors }}
+        </div>
+        <button type="submit" class="btn btn-success">Calculate</button>
+      </form>
+
+      {% if result is not None %}
+        <div class="alert alert-info mt-4">
+          <strong>Result:</strong> {{ result }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

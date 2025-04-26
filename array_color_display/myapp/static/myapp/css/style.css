@@ -1,0 +1,65 @@
+/* Reset & base */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Poppins', sans-serif; }
+
+/* Headers */
+h2 { margin-top:2rem; color:#333; }
+
+/* Even/Odd colors */
+.even { background:#e74c3c; }
+.odd  { background:#3498db; }
+.even, .odd { color:#fff; }
+
+/* 1. Grid */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+  gap:1rem;
+}
+.grid-item {
+  padding:1rem;
+  border-radius:6px;
+  text-align:center;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+
+/* 2. Badges */
+.badges {
+  display:flex; flex-wrap:wrap; gap:1rem;
+}
+.badge-item {
+  width:60px; height:60px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  font-size:1.1rem;
+  cursor:pointer;
+}
+
+/* 3. Table */
+.table-row.even td { }
+.table-row.odd  td { }
+.table-responsive { overflow-x:auto; }
+table { border-collapse:collapse; }
+table th, table td { padding:0.75rem; text-align:center; }
+
+/* 4. Inline List */
+.inline-list {
+  display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem;
+}
+.inline-item {
+  padding:0.5rem 1rem; border-radius:4px; font-size:1rem; cursor:pointer;
+}
+
+/* Click-select effect */
+.selected {
+  outline:3px solid gold;
+  transform:scale(1.05);
+  transition:transform 0.2s;
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width:576px) {
+  .grid { grid-template-columns:repeat(auto-fit,minmax(60px,1fr)); }
+  .badge-item { width:50px; height:50px; }
+}

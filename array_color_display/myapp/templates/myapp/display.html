@@ -1,0 +1,46 @@
+{% extends 'myapp/base.html' %}
+{% block title %}All Layouts{% endblock %}
+{% block content %}
+
+  <h2>1. Grid of Cards</h2>
+  <div class="grid">
+    {% for num in numbers %}
+      <div class="grid-item {{ num|divisibleby:2|yesno:'even,odd' }}">
+        {{ num }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <h2>2. Circular Badges</h2>
+  <div class="badges">
+    {% for num in numbers %}
+      <div class="badge-item {{ num|divisibleby:2|yesno:'even,odd' }}">
+        {{ num }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <h2>3. Table Layout</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <thead><tr><th>Number</th></tr></thead>
+      <tbody>
+        {% for num in numbers %}
+          <tr class="table-row {{ num|divisibleby:2|yesno:'even,odd' }}">
+            <td>{{ num }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>4. Inline List</h2>
+  <div class="inline-list">
+    {% for num in numbers %}
+      <div class="inline-item {{ num|divisibleby:2|yesno:'even,odd' }}">
+        {{ num }}
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+  <h2>Contact Us</h2>
+  {% if success %}
+    <div class="alert alert-success">
+      Thanks! Your message was submitted.
+    </div>
+  {% endif %}
+
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="mb-3">
+      {{ form.name.label_tag }}
+      {{ form.name }}
+      {{ form.name.errors }}
+    </div>
+    <div class="mb-3">
+      {{ form.email.label_tag }}
+      {{ form.email }}
+      {{ form.email.errors }}
+    </div>
+    <div class="mb-3">
+      {{ form.message.label_tag }}
+      {{ form.message }}
+      {{ form.message.errors }}
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+{% endblock %}

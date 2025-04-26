@@ -8,6 +8,11 @@
 <p align="center">
   A beautifully crafted collection of Django mini-projects with modern UI, animated effects, and beginner-friendly code 💻
 </p>
+<p align="center">
+  <a href="https://github.com/Jani-shiv/Django-Beginning-Task" target="_blank">
+    <img src="https://img.shields.io/badge/⭐%20Star%20On-GitHub-8A2BE2?style=for-the-badge&logo=github" alt="Star Badge" />
+  </a>
+</p>
 
 ---
 
@@ -64,7 +69,22 @@ pip install django
 
 ```
 
+
+
 ---
 
-<!-- Wave -->
-<img height="60" width="100%" section=footer src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3BiamF6ZXJocHdkcHJ1aXlrcjkzaTB6MmRwNm1zNWpyMTV1bmxmdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/i4GINnCIFD7i727t0N/giphy.gif" />
+| Connect | Thanks | Quote |
+|:-------:|:------------------------:|:---------|
+| <a href="https://github.com/Jani-shiv" target="_blank"><img src="https://img.shields.io/badge/Connect%20With%20Me-GitHub-181717?style=for-the-badge&logo=github" alt="Connect Badge" /></a> | <img src="https://media.giphy.com/media/DWkJAjzkpKqkHNSWyk/giphy.gif" height="80" alt="Thanks Footer" /> | Thanks for visiting! ✨ <br>  Let's create something amazing together! 🚀 |
+
+
+
+<!-- Wave Footer -->
+<p align="center" style="margin: 30px 0;">
+  <img height="100" width="100%" style="border-radius: 15px;" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3BiamF6ZXJocHdkcHJ1aXlrcjkzaTB6MmRwNm1zNWpyMTV1bmxmdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/i4GINnCIFD7i727t0N/giphy.gif" alt="Wave Footer" />
+</p>
+
+<!-- License Section -->
+<p align="center" style="font-size: 18px; margin: 20px 0; color: #ffffff; background-color: rgba(24, 23, 23, 0.8); padding: 15px; border-radius: 8px; display: inline-block;">
+  <sub>Released under the <a href="https://choosealicense.com/licenses/mit/" target="_blank" style="color: #00ff00; text-decoration: none; transition: color 0.3s;">MIT License</a> © 2025 <b>Jani-shiv</b> 🌟</sub>
+</p>
